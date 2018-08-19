@@ -75,4 +75,4 @@ public class Database {
 > **Note:** Ta thấy ở cách này mình không dùng `synchronized` ở `getInstance()` nữa mà mình dùng `synchronized(){ }`. Với chỉ một thay đổi nhỏ này sẽ có một sự thay đổi lớn trong khi chạy chương trình với lượng `thread lớn`.
 
 #### Bài viết của mình còn chưa nêu lên một số vấn đề khi `reflection` và `serializable` khi thực hiện với singleton và mình sẽ bổ sung sau.
-
+ 
