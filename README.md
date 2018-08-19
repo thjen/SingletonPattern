@@ -39,7 +39,7 @@ public class Database {
 ```
 > **Note:** Với các cách này ta rõ ràng thấy rằng nếu có nhiều `nhiều thread` cùng đồng thời gọi method `getInstance` thì sẽ có `nhiều Singleton object được tạo ra` và phá với code của chúng ta. Vậy nên để tránh trường hợp trên trong khi chạy nhiều thread thì ta thêm `synchronized keyword` vào `getInstance()`.
 
-####  Cách 2: Tối ưu cách 4
+####  Cách 2: Tối ưu cách 1
 ```
 public class Database {
 	private static Database singleObject;
